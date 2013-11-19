@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=1024" />
   <meta name="apple-mobile-web-app-capable" content="yew" />
   <meta name="author" content="Shaoke Xu" />
-  <title>AngularJS Template</title>
+  <title>AngularJS Data Binding</title>
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
@@ -23,7 +23,7 @@
   <link rel="stylesheet" media="screen" href="../vendors/deck.js/extensions/hash/deck.hash.css">
   <link rel="stylesheet" media="screen" href="../vendors/deck.js/extensions/scale/deck.scale.css">
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="../vendors/deck.js/themes/style/web-2.0.css">
+  <!-- <link rel="stylesheet" media="screen" href="../vendors/deck.js/themes/style/web-2.0.css"> -->
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
   <link rel="stylesheet" media="screen" href="../vendors/deck.js/themes/transition/horizontal-slide.css">
@@ -42,15 +42,74 @@
     <!-- Begin slides. Just make elements with a class of slide. -->
 
     <section class="slide">
-      <h1>Title</h1>
+      <div class="center-box">
+        <h1>Angular Data Binding</h1>
+        <h3>Blithe Xu</h3>
+        <h3>Nov 19, 2013</h3>
+      </div>
     </section>
 
     <section class="slide">
-      <h1>Content</h1>
+      <h2>Agenda</h2>
+      <ol>
+        <li>What is Data Binding</li>
+        <li>How to use Data Binding</li>
+        <li>Demo</li>
+        <li>Suggestion</li>
+      </ol>
+    </section>
+
+    <!-- <section>
+      <h2></h2>
+      <p></p>
+    </section -->>
+
+    <section class="slide">
+      <h2>What is Data Binding</h2>
+      <blockquote>
+        Data Binding in Augular web apps is the automatic synchronization of data between the model and view components.
+      </blockquote>
+      <p class="slide">
+        When you change the data in view it will automatically update your model. 
+      </p>
+      <p class="slide">
+        When you change the data in model, it will automatically update your view.
+      </p>
     </section>
 
     <section class="slide">
-      <h1>Here</h1>
+      <h2>Data Binding in Classical Template Systems</h2>
+      <img src="imgs/One_Way_Data_Binding.png">
+    </section>
+
+    <section class="slide">
+      <h2>Data Binding in Angular</h2>
+      <img src="imgs/Two_Way_Data_Binding.png">
+    </section>
+
+    <section class="slide">
+      <h2>How to use Data Binding</h2>
+      <blockquote>
+        {{ }} or ng-bind
+      </blockquote>
+    </section>
+
+    <section class="slide">
+      <div class="center-box">
+        <h1>DEMO</h1>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>Suggestion</h2>
+      <p>It is preferrable to use ngBind instead of curly markup</p>
+      <p>Or use ng-cloak</p>
+    </section>
+
+    <section class="slide">
+      <div class="center-box">
+        <h1>Thanks</h1>
+      </div>
     </section>
 
     <!-- End slides. -->
